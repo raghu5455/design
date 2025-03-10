@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="main-page-wrapper">
+        <aside class="dash-aside-navbar">
+            <div class="position-relative">
+                <div class="logo d-md-block d-flex align-items-center justify-content-between plr bottom-line pb-30">
+                    <a href="dashboard-index.html" class="logo">
+                        LOGO
+                    </a>
+                    <button class="close-btn d-block d-md-none"><i class="fa-light fa-circle-xmark"></i></button>
+                </div>
+                <nav class="dasboard-main-nav pt-30 pb-30 bottom-line">
+                    <ul class="style-none">
+                        <li class="plr"><a href="index.html" class="d-flex w-100 align-items-center ">
+                                <img src="assets/images/layout.png" alt="">
+                                <span>Dashboard</span>
+                            </a></li>
+                        <li class="plr"><a href="payment.html" class="d-flex w-100 align-items-center">
+                                <img src="assets/images/credit-card.png" alt="">
+                                <span>Payment</span>
+                            </a></li>
+                        <li class="plr"><a href="form.html" class="d-flex w-100 align-items-center">
+                                <img src="assets/images/form.png" alt="">
+                                <span>Form</span>
+                            </a></li>
+                        <li class="plr"><a href="customer.html" class="d-flex w-100 align-items-center active">
+                                <img src="assets/images/customer.png" alt="">
+                                <span>Customer</span>
+                            </a></li>
+                        <li class="plr"><a href="#" class="d-flex w-100 align-items-center">
+                                <img src="assets/images/monitor.png" alt="">
+                                <span>Monitor</span>
+                            </a></li>
+                        <li class="bottom-line pt-30 lg-pt-20 mb-40 lg-mb-30"></li>
+                        <li>
+                            <div class="nav-title">Profile</div>
+                        </li>
+                        <li class="plr"><a href="profile.html" class="d-flex w-100 align-items-center">
+                                <img src="assets/images/icon_3.svg" alt="">
+                                <span>Profile</span>
+                            </a></li>
+                        <li class="plr"><a href="account-settings.html" class="d-flex w-100 align-items-center">
+                                <img src="assets/images/icon_4.svg" alt="">
+                                <span>Account Settings</span>
+                            </a></li>
+
+
+                    </ul>
+                </nav>
+                <div class="plr pt-30 pb-30">
+                    <a href="#" class="d-flex w-100 align-items-center logout-btn">
+                        <div class="icon tran3s d-flex align-items-center justify-content-center rounded-circle">
+                            <img src="assets/images/icon_41.svg" alt="">
+                        </div>
+                        <span>Logout</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="dashboard-body">
+            <div class="position-relative">
+                <header class="dashboard-header">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <h4 class="m0 d-none d-lg-block">Customer</h4>
+                        <button class="dash-mobile-nav-toggler d-block d-md-none me-auto">
+                            <span></span>
+                        </button>
+                        <form action="#" class="search-form ms-auto">
+                            <input type="text" placeholder="Search here..">
+                            <button><img src="assets/images/icon_43.svg" alt="" class="lazy-img m-auto"></button>
+                        </form>
+                        <div class="profile-notification position-relative dropdown-center ms-3 ms-md-5 me-4">
+                            <button class="noti-btn dropdown-toggle" type="button" id="notification-dropdown"
+                                data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                <img src="assets/images/icon_11.svg" alt="" class="lazy-img">
+                                <div class="badge-pill"></div>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="notification-dropdown">
+                                <li>
+                                    <h4>Notification</h4>
+                                    <ul class="style-none notify-list">
+                                        <li class="d-flex align-items-center unread">
+                                            <img src="assets/images/2.svg" alt="" class="lazy-img icon">
+                                            <div class="flex-fill ps-2">
+                                                <h6>You have 3 new messages</h6>
+                                                <span class="time">3 hours ago</span>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <img src="assets/images/2.svg" alt="" class="lazy-img icon">
+                                            <div class="flex-fill ps-2">
+                                                <h6>Your message is denied</h6>
+                                                <span class="time">1 day ago</span>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center unread">
+                                            <img src="assets/images/2.svg" alt="" class="lazy-img icon">
+                                            <div class="flex-fill ps-2">
+                                                <h6>Your message is In progress</h6>
+                                                <span class="time">3 days ago</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d-none d-md-block me-4 ms-2 msg-icon">
+                            <a href="#" class="d-inline"><img src="assets/images/icon_2.svg" alt=""></a>
+                            <span class="notify">3</span>
+                        </div>
+                        <div class="user-data position-relative">
+                            <button class="user-avatar online position-relative rounded-circle dropdown-toggle"
+                                type="button" id="profile-dropdown" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" aria-expanded="false">
+                                <img src="assets/images/user-128.png" alt="" class="lazy-img">
+                            </button>
+                            <div class="user-name-data">
+                                <ul class="dropdown-menu" aria-labelledby="profile-dropdown">
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="profile.html"><img
+                                                src="assets/images/icon_3.svg" alt=""><span
+                                                class="ms-2 ps-1">Profile</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center"
+                                            href="account-settings.html"><img src="assets/images/icon_4.svg"
+                                                alt=""><span class="ms-2 ps-1">Account Settings</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="#"
+                                            data-bs-toggle="modal" data-bs-target="#deleteModal"><img
+                                                src="assets/images/icon_25.svg" alt="" class="lazy-img"><span
+                                                class="ms-2 ps-1">Delete Account</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <div class="section_title mb-4">
+                            <h2>Communications</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="customer_box">
+                            <div class="customer_box_left">
+                                <h5>12</h5>
+                                <p>Communication left</p>
+                            </div>
+                            <div class="customer_box_right">
+                                <img src="assets/images/icon_2_white.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="customer_box">
+                            <div class="customer_box_left">
+                                <h5>5</h5>
+                                <p>Token left</p>
+                            </div>
+                            <div class="customer_box_right">
+                                <img src="assets/images/tokens.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="message_status">
+                        <div class="section_title mb-4 mt-50">
+                            <h2>Status</h2>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Messages</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><span class="messages">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</span></td>
+                                        <td><span class="badge badge-completed">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><span class="messages">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</span></td>
+                                        <td><span class="badge badge-in-progress">In progress</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><span class="messages">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span></td>
+                                        <td><span class="badge badge-unclaimed">Unclaimed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td><span class="messages">Nascetur id nostra erat tincidunt torquent sollicitudin tincidunt. Class phasellus euismod platea blandit potenti cursus mi. </span></td>
+                                        <td><span class="badge badge-denied">Denied</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td><span class="messages">Volutpat vivamus ultricies interdum proin tortor ac cras. Platea maximus nisi vivamus dolor adipiscing potenti fringilla facilisi. Himenaeos dictum montes magnis odio tortor laoreet. </span></td>
+                                        <td><span class="badge badge-in-progress">In progress</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td><span class="messages">Tincidunt placerat erat mattis cursus sem justo nisi. Laoreet sociosqu nullam habitant aliquam nullam litora nibh. Arcu purus commodo auctor dolor ut nullam ut habitasse. </span></td>
+                                        <td><span class="badge badge-completed">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td><span class="messages">Ultricies praesent etiam nulla magnis facilisis nostra tortor tristique suspendisse. Consectetur pulvinar curabitur vulputate, vestibulum condimentum posuere magnis. </span></td>
+                                        <td><span class="badge badge-denied">Denied</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="all_messages">
+                        <div class="section_title mb-4 mt-50">
+                            <h2>All Messages</h2>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Messages</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><span class="messages">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</span></td>
+                                        <td><span class="date">22 jan</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><span class="messages">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</span></td>
+                                        <td><span class="date">21 jan</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><span class="messages">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span></td>
+                                        <td><span class="date">21 jan</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td><span class="messages">Nascetur id nostra erat tincidunt torquent sollicitudin tincidunt. Class phasellus euismod platea blandit potenti cursus mi. </span></td>
+                                        <td><span class="date">20 jan</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td><span class="messages">Volutpat vivamus ultricies interdum proin tortor ac cras. Platea maximus nisi vivamus dolor adipiscing potenti fringilla facilisi. Himenaeos dictum montes magnis odio tortor laoreet. </span></td>
+                                        <td><span class="date">19 jan</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td><span class="messages">Tincidunt placerat erat mattis cursus sem justo nisi. Laoreet sociosqu nullam habitant aliquam nullam litora nibh. Arcu purus commodo auctor dolor ut nullam ut habitasse. </span></td>
+                                        <td><span class="date">19 jan</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td><span class="messages">Ultricies praesent etiam nulla magnis facilisis nostra tortor tristique suspendisse. Consectetur pulvinar curabitur vulputate, vestibulum condimentum posuere magnis. </span></td>
+                                        <td><span class="date">18 jan</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td><span class="messages">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</span></td>
+                                        <td><span class="date">17 jan</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td><span class="messages">aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</span></td>
+                                        <td><span class="date">15 jan</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td><span class="messages">fugiat nulla pariatur quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span></td>
+                                        <td><span class="date">15 jan</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="main-title d-block d-lg-none">Customers</h2>
+        <div class="bg-white border-20">
+        </div>
+    </div>
+    </div>
+
+    <button class="scroll-top">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

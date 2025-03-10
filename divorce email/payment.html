@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="main-page-wrapper">
+        <aside class="dash-aside-navbar">
+            <div class="position-relative">
+                <div class="logo d-md-block d-flex align-items-center justify-content-between plr bottom-line pb-30">
+                    <a href="dashboard-index.html" class="logo">
+                        LOGO
+                    </a>
+                    <button class="close-btn d-block d-md-none"><i class="fa-light fa-circle-xmark"></i></button>
+                </div>
+                <nav class="dasboard-main-nav pt-30 pb-30 bottom-line">
+                    <ul class="style-none">
+                        <li class="plr"><a href="index.html" class="d-flex w-100 align-items-center ">
+                                <img src="assets/images/layout.png" alt="">
+                                <span>Dashboard</span>
+                            </a></li>
+                        <li class="plr"><a href="payment.html" class="d-flex w-100 align-items-center active">
+                                <img src="assets/images/credit-card.png" alt="">
+                                <span>Payment</span>
+                            </a></li>
+                        <li class="plr"><a href="form.html" class="d-flex w-100 align-items-center">
+                                <img src="assets/images/form.png" alt="">
+                                <span>Form</span>
+                            </a></li>
+                        <li class="plr"><a href="customer.html" class="d-flex w-100 align-items-center">
+                                <img src="assets/images/customer.png" alt="">
+                                <span>Customer</span>
+                            </a></li>
+                        <li class="plr"><a href="#" class="d-flex w-100 align-items-center">
+                                <img src="assets/images/monitor.png" alt="">
+                                <span>Monitor</span>
+                            </a></li>
+                        <li class="bottom-line pt-30 lg-pt-20 mb-40 lg-mb-30"></li>
+                        <li>
+                            <div class="nav-title">Profile</div>
+                        </li>
+                        <li class="plr"><a href="profile.html" class="d-flex w-100 align-items-center">
+                                <img src="assets/images/icon_3.svg" alt="">
+                                <span>Profile</span>
+                            </a></li>
+                        <li class="plr"><a href="account-settings.html" class="d-flex w-100 align-items-center">
+                                <img src="assets/images/icon_4.svg" alt="">
+                                <span>Account Settings</span>
+                            </a></li>
+
+
+                    </ul>
+                </nav>
+                <div class="plr pt-30 pb-30">
+                    <a href="#" class="d-flex w-100 align-items-center logout-btn">
+                        <div class="icon tran3s d-flex align-items-center justify-content-center rounded-circle">
+                            <img src="assets/images/icon_41.svg" alt="">
+                        </div>
+                        <span>Logout</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="dashboard-body">
+            <div class="position-relative">
+                <header class="dashboard-header">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <h4 class="m0 d-none d-lg-block">Payment</h4>
+                        <button class="dash-mobile-nav-toggler d-block d-md-none me-auto">
+                            <span></span>
+                        </button>
+                        <form action="#" class="search-form ms-auto">
+                            <input type="text" placeholder="Search here..">
+                            <button><img src="assets/images/icon_43.svg" alt="" class="lazy-img m-auto"></button>
+                        </form>
+                        <div class="profile-notification position-relative dropdown-center ms-3 ms-md-5 me-4">
+                            <button class="noti-btn dropdown-toggle" type="button" id="notification-dropdown"
+                                data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                <img src="assets/images/icon_11.svg" alt="" class="lazy-img">
+                                <div class="badge-pill"></div>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="notification-dropdown">
+                                <li>
+                                    <h4>Notification</h4>
+                                    <ul class="style-none notify-list">
+                                        <li class="d-flex align-items-center unread">
+                                            <img src="assets/images/2.svg" alt="" class="lazy-img icon">
+                                            <div class="flex-fill ps-2">
+                                                <h6>You have 3 new messages</h6>
+                                                <span class="time">3 hours ago</span>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <img src="assets/images/2.svg" alt="" class="lazy-img icon">
+                                            <div class="flex-fill ps-2">
+                                                <h6>Your message is denied</h6>
+                                                <span class="time">1 day ago</span>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center unread">
+                                            <img src="assets/images/2.svg" alt="" class="lazy-img icon">
+                                            <div class="flex-fill ps-2">
+                                                <h6>Your message is In progress</h6>
+                                                <span class="time">3 days ago</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d-none d-md-block me-4 ms-2 msg-icon">
+                            <a href="#" class="d-inline"><img src="assets/images/icon_2.svg" alt=""></a>
+                            <span class="notify">3</span>
+                        </div>
+                        <div class="user-data position-relative">
+                            <button class="user-avatar online position-relative rounded-circle dropdown-toggle"
+                                type="button" id="profile-dropdown" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" aria-expanded="false">
+                                <img src="assets/images/user-128.png" alt="" class="lazy-img">
+                            </button>
+                            <div class="user-name-data">
+                                <ul class="dropdown-menu" aria-labelledby="profile-dropdown">
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="profile.html"><img
+                                                src="assets/images/icon_3.svg" alt=""><span
+                                                class="ms-2 ps-1">Profile</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center"
+                                            href="account-settings.html"><img src="assets/images/icon_4.svg"
+                                                alt=""><span class="ms-2 ps-1">Account Settings</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="#"
+                                            data-bs-toggle="modal" data-bs-target="#deleteModal"><img
+                                                src="assets/images/icon_25.svg" alt="" class="lazy-img"><span
+                                                class="ms-2 ps-1">Delete Account</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <div class="section_title mb-4">
+                            <h2>Choose Your Plan</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-12 d-flex align-items-center">
+                        <div class="tab_wrapper">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#home-tab-pane" type="button" role="tab"
+                                        aria-controls="home-tab-pane" aria-selected="true">Private Clients </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                        aria-controls="profile-tab-pane" aria-selected="false">Legal Aid
+                                        Clients </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tab_wrapper">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show" id="home-tab-pane" role="tabpanel"
+                                    aria-labelledby="home-tab" tabindex="0">
+                                    <ul class="nav nav-tabs" id="myTab1" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="home-tab1" data-bs-toggle="tab"
+                                                data-bs-target="#home-tab-pane1" type="button" role="tab"
+                                                aria-controls="home-tab-pane1" aria-selected="true">A normal individual
+                                                communication</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="profile-tab1" data-bs-toggle="tab"
+                                                data-bs-target="#profile-tab-pane1" type="button" role="tab"
+                                                aria-controls="profile-tab-pane1" aria-selected="false">5 monitored
+                                                communications </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                    aria-labelledby="profile-tab" tabindex="0">
+                                    <p>Legal aid clients benefit from a token-based system that simplifies the process
+                                        without the need for direct purchases. Each token represents a monitored and
+                                        forwarded email, ensuring transparency and control. Tokens are automatically
+                                        deducted with every monitored email sent.</p><br>
+
+                                    <h6>Enter a Coupen code to get 15 monitored communications</h6>
+                                    <div class="coupon_search_box">
+                                        <form class="cuopon_form">
+                                            <input type="text" id="coupon" name="coupon"
+                                                placeholder="Enter Coupon Code">
+                                            <button type="submit">Apply</button>
+                                        </form>
+                                    </div>
+                                    <div class="btns">
+                                        <a href="#" class="btn main-btn">Use Token</a>
+                                        <a href="#" class="btn main-btn outline-btn">Check Token</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tab-content form_tab" id="myTabContent1">
+                            <div class="tab-pane fade " id="home-tab-pane1" role="tabpanel" aria-labelledby="home-tab1"
+                                tabindex="0">
+                                <div class="checkout-container">
+                                    <form class="checkout-form">
+                                        <h3>Billing Details</h3>
+                                        <div class="form-section">
+                                            <select id="country" name="country">
+                                                <option value="us">United States (US)</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-section">
+                                            <input type="text" id="address" name="address" placeholder="Street address">
+                                        </div>
+
+                                        <div class="form-section">
+                                            <input type="text" id="apartment" name="apartment"
+                                                placeholder="Apt, Suite, Bldg, Gate Code">
+                                        </div>
+
+                                        <div class="form-section">
+                                            <input type="text" id="city" name="city" placeholder="City">
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-section half">
+                                                <input type="text" id="state" name="state" placeholder="State / County">
+                                            </div>
+                                            <div class="form-section half">
+                                                <input type="text" id="postcode" name="postcode"
+                                                    placeholder="Postcode / ZIP">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-section">
+                                            <input type="email" id="email" name="e,ail" placeholder="Email address ">
+                                        </div>
+                                        <div class="form-section">
+                                            <textarea
+                                                placeholder="Notes about your order, e.g., special delivery instructions"></textarea>
+                                        </div>
+                                    </form>
+
+                                    <div class="order-summary">
+                                        <h3>Order Summary</h3>
+                                        <p>A normal individual communication × 1</p>
+                                        <p>Total: €49.95</p>
+                                        <div class="credit-card-option">
+                                            <label class="credit-card-label">
+                                                <input type="radio" name="payment" value="credit-card" checked> Credit
+                                                Card
+                                            </label>
+                                            <div class="card-icons">
+                                                <img src="assets/images/visa.png" class="img-fluid">
+                                                <img src="assets/images/mastercard-icon.png" class="img-fluid">
+                                                <img src="assets/images//amexicon.png" class="img-fluid">
+                                                <img src="assets/images/discover-icon.png" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="credit-card-fields">
+                                            <input type="text" placeholder="Card Number">
+                                            <input type="text" placeholder="Expiration (MM/YY)" class="col-6">
+                                            <input type="text" placeholder="CSV" class="col-6">
+                                        </div>
+
+                                        <div class="credit-card-option">
+                                            <label>
+                                                <input type="radio" name="payment" value="paypal"> PayPal
+                                            </label>
+                                            <div class="card-icons">
+                                                <img src="assets/images/paypal-icon.png" class="img-fluid">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-section d-flex mt-3">
+                                            <input type="checkbox" id="stay-updated" name="stay-updated" class="me-2">
+                                            <label for="stay-updated">I've read and accept the terms &
+                                                conditions</label>
+                                        </div>
+                                        <button type="submit">Place Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile-tab-pane1" role="tabpanel"
+                                aria-labelledby="profile-tab1" tabindex="0">
+                                <div class="checkout-container">
+                                    <form class="checkout-form">
+                                        <div class="form-section">
+                                            <select id="country" name="country">
+                                                <option value="us">United States (US)</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-section">
+                                            <input type="text" id="address" name="address" placeholder="Street address">
+                                        </div>
+
+                                        <div class="form-section">
+                                            <input type="text" id="apartment" name="apartment"
+                                                placeholder="Apt, Suite, Bldg, Gate Code">
+                                        </div>
+
+                                        <div class="form-section">
+                                            <input type="text" id="city" name="city" placeholder="City">
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-section half">
+                                                <input type="text" id="state" name="state" placeholder="State / County">
+                                            </div>
+                                            <div class="form-section half">
+                                                <input type="text" id="postcode" name="postcode"
+                                                    placeholder="Postcode / ZIP">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-section">
+                                            <input type="email" id="email" name="e,ail" placeholder="Email address ">
+                                        </div>
+                                        <div class="form-section">
+                                            <textarea
+                                                placeholder="Notes about your order, e.g., special delivery instructions"></textarea>
+                                        </div>
+
+                                    </form>
+
+                                    <div class="order-summary">
+                                        <h3>Order Summary</h3>
+                                        <p>5 monitored communications × 1</p>
+                                        <p>discounted price: €195.00</p>
+                                        <p>Total: €195.00</p>
+                                        <div class="credit-card-option">
+                                            <label class="credit-card-label">
+                                                <input type="radio" name="payment" value="credit-card" checked> Credit
+                                                Card
+                                            </label>
+                                            <div class="card-icons">
+                                                <img src="assets/images/visa.png" class="img-fluid">
+                                                <img src="assets/images/mastercard-icon.png" class="img-fluid">
+                                                <img src="assets/images//amexicon.png" class="img-fluid">
+                                                <img src="assets/images/discover-icon.png" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="credit-card-fields">
+                                            <input type="text" placeholder="Card Number">
+                                            <input type="text" placeholder="Expiration (MM/YY)" class="col-6">
+                                            <input type="text" placeholder="CSV" class="col-6">
+                                        </div>
+
+                                        <div class="credit-card-option">
+                                            <label>
+                                                <input type="radio" name="payment" value="paypal"> PayPal
+                                            </label>
+                                            <div class="card-icons">
+                                                <img src="assets/images/paypal-icon.png" class="img-fluid">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-section d-flex mt-3">
+                                            <input type="checkbox" id="stay-updated" name="stay-updated" class="me-2">
+                                            <label for="stay-updated">I've read and accept the terms &
+                                                conditions</label>
+                                        </div>
+                                        <button type="submit">Place Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="main-title d-block d-lg-none">Payment</h2>
+            <div class="bg-white border-20">
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-top">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        document.getElementById('profile-tab').addEventListener('click', function () {
+            const tabPane = document.getElementById('myTabContent1');
+            tabPane.classList.add('hide');
+        });
+        document.getElementById('home-tab').addEventListener('click', function () {
+            const tabPane = document.getElementById('myTabContent1');
+            tabPane.classList.remove('hide');
+
+            const activeLinks = document.querySelectorAll('#myTabContent .nav-link.active');
+            const activeLinks1 = document.querySelectorAll('#myTabContent1 .tab-pane.active');
+
+            activeLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+            activeLinks1.forEach(link => {
+                link.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

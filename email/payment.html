@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Email management system</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Payment </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Form </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Customer </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Monitor </a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-dark" type="submit">Sign in / Sign up</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <video autoplay muted loop id="background-video">
+            <source src="assets/video/main.mp4" type="video/mp4">Your browser does not support the video tag.
+        </video>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner_inner">
+                        <h5>Easy to use feature</h5>
+                        <h1>Send a message to the <br><span>Divorced partners</span></h1>
+                        <p>Empowering communication for divorced partners with a secure, private, and reliable message
+                            forwarding platform designed to simplify connections.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment" id="payment">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="section_title">
+                        <h2>Payment</h2>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-end">
+                    <div class="tab_wrapper">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">A normal individual
+                                    email</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">15 Emails</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+                            <div class="checkout-container">
+                                <form class="checkout-form">
+                                    <h3>Billing Details</h3>
+                                    <div class="form-section">
+                                        <select id="country" name="country">
+                                            <option value="us">United States (US)</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-section">
+                                        <input type="text" id="address" name="address" placeholder="Street address">
+                                    </div>
+
+                                    <div class="form-section">
+                                        <input type="text" id="apartment" name="apartment"
+                                            placeholder="Apt, Suite, Bldg, Gate Code">
+                                    </div>
+
+                                    <div class="form-section">
+                                        <input type="text" id="city" name="city" placeholder="City">
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-section half">
+                                            <input type="text" id="state" name="state" placeholder="State / County">
+                                        </div>
+                                        <div class="form-section half">
+                                            <input type="text" id="postcode" name="postcode"
+                                                placeholder="Postcode / ZIP">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-section">
+                                        <input type="email" id="email" name="e,ail" placeholder="Email address ">
+                                    </div>
+                                    <div class="form-section">
+                                        <textarea
+                                            placeholder="Notes about your order, e.g., special delivery instructions"></textarea>
+                                    </div>
+                                </form>
+
+                                <div class="order-summary">
+                                    <h3>Order Summary</h3>
+                                    <p>A normal individual email × 1</p>
+                                    <p>Total: $38.00</p>
+                                    <div class="credit-card-option">
+                                        <label class="credit-card-label">
+                                            <input type="radio" name="payment" value="credit-card" checked> Credit Card
+                                        </label>
+                                        <div class="card-icons">
+                                            <img src="assets/img/visa.png" class="img-fluid">
+                                            <img src="assets/img/mastercard-icon.png" class="img-fluid">
+                                            <img src="assets/img//amexicon.png" class="img-fluid">
+                                            <img src="assets/img/discover-icon.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="credit-card-fields">
+                                        <input type="text" placeholder="Card Number">
+                                        <input type="text" placeholder="Expiration (MM/YY)" class="col-6">
+                                        <input type="text" placeholder="CSV" class="col-6">
+                                    </div>
+
+                                    <div class="credit-card-option">
+                                    <label>
+                                        <input type="radio" name="payment" value="paypal"> PayPal
+                                    </label>
+                                    <div class="card-icons">
+                                        <img src="assets/img/paypal-icon.png" class="img-fluid">
+                                    </div>
+                                </div>
+
+                                    <div class="form-section">
+                                        <input type="checkbox" id="stay-updated" name="stay-updated">
+                                        <label for="stay-updated">I've read and accept the terms & conditions</label>
+                                    </div>
+                                    <button type="submit">Place Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                            tabindex="0">
+                            <div class="checkout-container">
+                                <form class="checkout-form">
+                                    <div class="form-section">
+                                        <select id="country" name="country">
+                                            <option value="us">United States (US)</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-section">
+                                        <input type="text" id="address" name="address" placeholder="Street address">
+                                    </div>
+
+                                    <div class="form-section">
+                                        <input type="text" id="apartment" name="apartment"
+                                            placeholder="Apt, Suite, Bldg, Gate Code">
+                                    </div>
+
+                                    <div class="form-section">
+                                        <input type="text" id="city" name="city" placeholder="City">
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-section half">
+                                            <input type="text" id="state" name="state" placeholder="State / County">
+                                        </div>
+                                        <div class="form-section half">
+                                            <input type="text" id="postcode" name="postcode"
+                                                placeholder="Postcode / ZIP">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-section">
+                                        <input type="checkbox" id="stay-updated" name="stay-updated">
+                                        <label for="stay-updated">Stay in the know! (optional)</label>
+                                    </div>
+
+                                </form>
+
+                                <div class="order-summary">
+                                    <h3>Order Summary</h3>
+                                    <p>15 Emails × 1</p>
+                                    <p>Subtotal: $38.00</p>
+
+
+                                    <h3>Payment</h3>
+                                    <label>
+                                        <input type="radio" name="payment" value="credit-card" checked> Credit Card
+                                    </label>
+                                    <div class="credit-card-fields">
+                                        <input type="text" placeholder="Card Number">
+                                        <input type="text" placeholder="Expiration (MM/YY)">
+                                        <input type="text" placeholder="CSV">
+                                    </div>
+
+                                    <label>
+                                        <input type="radio" name="payment" value="paypal"> PayPal
+                                    </label>
+
+                                    <div class="form-section">
+                                        <textarea
+                                            placeholder="Notes about your order, e.g., special delivery instructions"></textarea>
+                                    </div>
+                                    <button type="submit">Place Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/bootstrap.js"></script>
+</body>
+
+</html>

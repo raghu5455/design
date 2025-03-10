@@ -1,0 +1,698 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Text';
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('../font/SFProText-Regular.woff2') format('woff2'),
+        url('../font/SFProText-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('../font/SFProText-Medium.woff2') format('woff2'),
+        url('../font/SFProText-Medium.woff') format('woff');
+    font-weight: 500;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.vitalityrx-slider1 h6,
+.vitalityrx-slider1 li,
+.vitalityrx-slider1 p {
+    font-weight: 400;
+}
+
+.vitalityrx-slider1 {
+    padding: 10px 0 100px;
+}
+
+.vitalityrx-slider1.mobile {
+    display: none;
+}
+
+
+.vitalityrx-slider1 .splide__track {
+    overflow-x: clip !important;
+    overflow: unset;
+    z-index: 9;
+}
+
+.vitalityrx-slider1 .splide__pagination {
+    bottom: -6.5em;
+    z-index: 9;
+    width: 390px;
+    margin: 0 auto;
+}
+
+.vitalityrx-slider1 .splide__pagination li {
+    margin-left: 3px;
+}
+
+.vitalityrx-slider1 .splide__pagination__page {
+    background: #2222224D;
+    border-radius: 0;
+    border: 0;
+    border-radius: 50%;
+    display: inline-block;
+    height: 12px;
+    margin: 0 .1rem;
+    padding: 0;
+    position: relative;
+    transition: background-color .2s ease, color .2s ease;
+    width: 12px;
+
+}
+
+.vitalityrx-slider1 .splide__pagination__page.is-active {
+    background: #22222299;
+    transform: scale(1);
+}
+
+.vitalityrx-slider1 .vitalityrx-slider-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.vitalityrx-slider1 .vitalityrx-slide-inner {
+    overflow-x: clip;
+    position: relative;
+}
+
+.vitalityrx-slider1 .vitalityrx_slide_discription {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    max-width: 1150px;
+}
+
+.vitalityrx-slider1 .vitalityrx_slide_discription p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.77px;
+    text-align: center;
+    margin: 0;
+    color: #222222;
+}
+
+.vitalityrx-slider1 .vitalityrx_slide_discription h3 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+    color: #222222;
+}
+
+
+.vitalityrx-slider1 .vitalityrx-slide-img {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    transform: translateX(-50px);
+}
+
+.vitalityrx-slider1 .vitalityrx-slide-img img {
+    max-width: 495px;
+}
+
+.vitalityrx-slider1 .left-img {
+    top: 52%;
+    position: absolute;
+    width: 243px;
+    transform: rotate(13deg);
+    left: 2%;
+}
+
+.vitalityrx-slider1 .right-img {
+    position: absolute;
+    top: 49%;
+    max-width: 287px;
+    right: 4.5%;
+    transform: rotate(-33deg);
+}
+
+.vitalityrx-slider1 .bullet {
+    max-width: 335px;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+}
+
+.vitalityrx-slider1 .bullet_point {
+    margin-left: 100px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.vitalityrx-slider1 .bullet.bullet_right .bullet_point {
+    margin-left: -20px;
+}
+
+.vitalityrx-slider1 .bullet img {
+    width: 45px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.vitalityrx-slider1 .bullet h6 {
+    font-size: 14px;
+    line-height: 22.4px;
+    margin: 0;
+    background: #fff;
+    border: 1px solid #00000026;
+    padding: 6px 8px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.vitalityrx-slider1 .bullet .bullet_hover_show {
+    font-size: 12px;
+    line-height: 14.28px;
+    margin: 0;
+    border: 1px solid #00000026;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 2px;
+    background: #fff;
+    opacity: 0;
+    transition: all 0.2s linear;
+    position: relative;
+    z-index: 9;
+    pointer-events: none;
+}
+
+.vitalityrx-slider1 .bullet .bullet_hover_show p {
+    margin: 0;
+}
+
+.vitalityrx-slider1 .bullet .bullet_hover_show ul {
+    margin: 0;
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+.vitalityrx-slider1 .bullet .bullet_hover_show.active {
+    opacity: 1;
+}
+
+.vitalityrx-slider1 .bullet1 {
+    top: 18%;
+    left: -13%;
+}
+
+.vitalityrx-slider1 .bullet2 {
+    top: 16%;
+    left: 51%;
+}
+
+.vitalityrx-slider1 .bullet3 {
+    top: 55%;
+    left: -23%;
+}
+
+.vitalityrx-slider1 .bullet4 {
+    top: 42%;
+    left: 68%;
+}
+
+.vitalityrx-slider1 .bullet5 {
+    top: 81%;
+    left: -6%;
+}
+
+.vitalityrx-slider1 .bullet6 {
+    left: 46%;
+    top: 81%;
+}
+
+.vitalityrx-slider1 #background-video {
+    max-width: 610px;
+}
+
+.vitalityrx-slider1 .vitalityrx-slide-video {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.vitalityrx-slider1 .bullet-1 {
+    top: 18%;
+    left: -13%;
+}
+
+.vitalityrx-slider1 .bullet-2 {
+    top: 18%;
+    left: 93%;
+}
+
+.vitalityrx-slider1 .bullet-3 {
+    top: 65%;
+    left: -13%;
+}
+
+.vitalityrx-slider1 .bullet-4 {
+    top: 65%;
+    left: 93%;
+}
+
+.vitalityrx-slider1 .bullet-5 {
+    top: 92%;
+    left: 49.5%;
+}
+
+.vitalityrx-slider1 .vitalityrx-img-slide {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.vitalityrx-slider1 .vitality-img {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.vitalityrx-slider1 .vitality-img img {
+    max-width: 768px;
+}
+
+.vitalityrx-slider1 .vitalityrx-img-slide .bullet-1 {
+    top: 7%;
+    left: 9%;
+}
+
+.vitalityrx-slider1 .vitalityrx-img-slide .bullet-2 {
+    top: 7%;
+    left: 83%;
+}
+
+.vitalityrx-slider1 .vitalityrx-img-slide .bullet-3 {
+    top: 53%;
+    left: 9%;
+}
+
+.vitalityrx-slider1 .vitalityrx-img-slide .bullet-4 {
+    top: 53%;
+    left: 83%;
+}
+
+.vitalityrx-slider1 .vitalityrx-img-slide .bullet-5 {
+    top: 81%;
+    left: 49.5%;
+}
+
+@media (max-width:1200px) {
+    .vitalityrx-slider1 .vitalityrx-slider-container {
+        max-width: 1000px;
+    }
+
+    .vitalityrx-slider1 .vitalityrx-slide-img img {
+        max-width: 340px;
+    }
+
+    .vitalityrx-slider1 .left-img {
+        width: 175px;
+        top: 65%;
+        left: 5%;
+    }
+
+    .vitalityrx-slider1 .right-img {
+        max-width: 215px;
+        top: 64%;
+        right: 9.5%;
+    }
+
+    .vitalityrx-slider1 .vitalityrx-slide-inner .bullet img {
+        width: 30px;
+    }
+
+    .vitalityrx-slider1 .bullet1 {
+        left: -16%;
+    }
+
+    .vitalityrx-slider1 .bullet2 {
+        left: 47%;
+    }
+
+    .vitalityrx-slider1 .bullet3 {
+        left: -27%;
+    }
+
+    .vitalityrx-slider1 .bullet4 {
+        left: 64%;
+    }
+
+    .vitalityrx-slider1 .bullet5 {
+        left: -14%;
+    }
+
+    .vitalityrx-slider1 .bullet6 {
+        left: 42%;
+    }
+
+    .vitalityrx-slider1 #background-video {
+        max-width: 450px;
+    }
+
+    .vitalityrx-slider1 .bullet-2 {
+        left: 89%;
+    }
+
+    .vitalityrx-slider1 .bullet-4 {
+        left: 89%;
+    }
+
+    .vitalityrx-slider1 .bullet-5 {
+        left: 51%;
+    }
+
+    .vitalityrx-slider1 .bullet.bullet_right {
+        max-width: 295px;
+    }
+
+    .vitalityrx-slider1 .vitality-img img {
+        max-width: 540px;
+    }
+
+    .vitalityrx-slider1 .vitalityrx-img-slide .bullet-3,
+    .vitalityrx-slider1 .vitalityrx-img-slide .bullet-1 {
+        left: 6%;
+    }
+
+    .vitalityrx-slider1 .vitalityrx-img-slide .bullet-4,
+    .vitalityrx-slider1 .vitalityrx-img-slide .bullet-2 {
+        left: 81%;
+    }
+}
+
+@media (max-width:991px) {
+    .vitalityrx-slider1 .vitalityrx_slide_discription p {
+        font-size: 20px;
+        line-height: 25.77px;
+    }
+
+    .vitalityrx-slider1 .left-img {
+        display: none;
+    }
+
+    .vitalityrx-slider1 .right-img {
+        display: none;
+    }
+
+    .vitalityrx-slider1 .bullet.bullet_right {
+        max-width: 200px;
+    }
+
+    .vitalityrx-slider1 .bullet.bullet_right.bullet_middle {
+        max-width: 335px;
+    }
+
+    .vitalityrx-slider1 .bullet-2 {
+        left: 86%;
+    }
+
+    .vitalityrx-slider1 .bullet-4 {
+        left: 86%;
+    }
+
+    .vitalityrx-slider1 .vitality-img img {
+        max-width: 490px;
+    }
+
+    .vitalityrx-slider1 .vitalityrx-slide-img {
+        transform: unset;
+    }
+}
+
+@media (max-width:860px) {
+    .vitalityrx-slider1 .bullet {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+    .vitalityrx-slider1 .pt-sm-50 {
+        padding-top: 50px;
+    }
+
+    .vitalityrx-slider1 {
+        display: none;
+    }
+
+    .vitalityrx-slider1.mobile {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .vitalityrx-slider1 .vitalityrx_slide_discription h3 {
+        font-size: 25px;
+        line-height:  29.75px;
+        text-align: left;
+    }
+    .vitalityrx-slider1 .vitalityrx_slide_discription p {
+        font-size: 14px;
+        line-height: 18.48px;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    .vitalityrx-slider1 .vitalityrx_slide_discription {
+        margin-bottom: 35px;
+    }
+
+    .vitalityrx-slider1 .bullet h6 {
+        font-size: 10px;
+        line-height: 14px;
+        z-index: 9;
+        position: relative;
+    }
+
+    .vitalityrx-slider1 .bullet_point {
+        margin-left: 80px;
+    }
+
+    .vitalityrx-slider1 .bullet,
+    .vitalityrx-slider1 .bullet.bullet_right {
+        max-width: 300px;
+    }
+
+    .vitalityrx-slider1 .bullet .bullet_hover_show.active {
+        z-index: 999;
+    }
+
+    .vitalityrx-slider1 .mobile_bullets .bullet {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: 100% !important;
+        margin-top: 10px;
+    }
+
+    .vitalityrx-slider1 .mobile_bullets .bullet h6 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18.48px;
+        letter-spacing: -0.005em;
+    }
+
+    .vitalityrx-slider1 .mobile_bullets .bullet h6 br {
+        display: none;
+    }
+
+    .vitalityrx-slider1 .bullet.bullet_right.bullet_middle {
+        max-width: 300px;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 99;
+    }
+
+    .vitalityrx-slider1 .bullet.bullet_right.bullet_middle .bullet_point {
+        margin: 0 auto;
+    }
+
+    .vitalityrx-slider1 .bullet.bullet_right.bullet_middle .bullet_hover_show {
+        text-align: left;
+    }
+
+    .vitalityrx-slider1 .bullet.bullet_right {
+        text-align: right;
+    }
+
+    .vitalityrx-slider1 .bullet.bullet_right .bullet_hover_show {
+        text-align: left;
+    }
+
+    .vitalityrx-slider1 .bullet.bullet_right .bullet_point {
+        margin-left: auto;
+        margin-right: 95px;
+    }
+
+    .vitalityrx-slider1 .bullet.bullet_right.bullet-4 .bullet_point {
+        margin-right: 80px;
+    }
+
+    .vitalityrx-slider1 .vitalityrx-slide-img img {
+        max-width: 350px;
+    }
+
+    .vitalityrx-slider1 .vitalityrx-slide-img img {
+        max-width: 260px;
+    }
+
+    .vitalityrx-slider1 .bullet1 {
+        top: 1%;
+        left: -15%;
+    }
+
+    .vitalityrx-slider1 .bullet2 {
+        left: inherit;
+        top: 1%;
+        right: -15%;
+    }
+
+    .vitalityrx-slider1 .bullet3 {
+        left: -15%;
+        top: 55%;
+    }
+
+    .vitalityrx-slider1 .bullet4 {
+        left: inherit;
+        top: 55%;
+        right: -15%;
+    }
+
+    .vitalityrx-slider1 .bullet5 {
+        left: -10%;
+        top: 86%;
+    }
+
+    .vitalityrx-slider1 .bullet6 {
+        right: -11%;
+        left: inherit;
+        top: 86%;
+    }
+
+    .vitalityrx-slider1 .vitalityrx-slide-img {
+        margin-bottom: 85px;
+    }
+
+    .vitalityrx-slider1 .mobile_bullets {
+        display: none;
+    }
+
+    .vitalityrx-slider1 .vitalityrx-slide-inner .bullet img {
+        position: relative;
+        z-index: 9;
+    }
+}
+
+
+@media (max-width: 389px) {
+    .vitalityrx-slider1 #background-video {
+        max-width: 300px;
+    }
+
+    .vitalityrx-slider1 .vitalityrx-slide-inner .bullet img {
+        width: 20px;
+    }
+
+    .vitalityrx-slider1 .bullet,
+    .vitalityrx-slider1 .bullet.bullet_right {
+        max-width: 250px;
+    }
+
+    .vitalityrx-slider1 .bullet-1 {
+        top: 10%;
+        left: 7%;
+    }
+
+    .vitalityrx-slider1 .bullet-3 {
+        top: 71%;
+        left: 7%;
+    }
+
+    .vitalityrx-slider1 .bullet.bullet_right.bullet_middle {
+        max-width: 250px;
+    }
+
+    .vitalityrx-slider1 .bullet1 {
+        top: 1%;
+        left: -3%;
+    }
+
+    .vitalityrx-slider1 .bullet2 {
+        right: -9%;
+        top: 1%;
+    }
+
+    .vitalityrx-slider1 .bullet3 {
+        left: -5%;
+        top: 55%;
+    }
+
+    .vitalityrx-slider1 .bullet4 {
+        right: -9%;
+        top: 55%;
+    }
+
+    .vitalityrx-slider1 .bullet5 {
+        left: -1%;
+        top: 86%;
+    }
+
+    .vitalityrx-slider1 .bullet6 {
+        right: -3%;
+        top: 86%;
+    }
+}
+
+.vitalityrx-slider1 .splide__arrows.splide__arrows--ltr {
+    z-index: 9999;
+    position: absolute;
+    width: 15%;
+    bottom: -95px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.vitalityrx-slider1 .mobile_bullets .bullet_hover_show {
+    display: none
+}
+
+.vitalityrx-slider1 .mobile_bullets .bullet_hover_show.active {
+    opacity: 1;
+    display: block
+}
