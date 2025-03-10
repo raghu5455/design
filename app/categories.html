@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Family Wizard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="body-scroll" data-page="index">
+    <div class="sidebar-wrap  sidebar-overlay">
+        <div class="closemenu text-muted">Close Menu</div>
+        <div class="sidebar ">
+            <div class="row my-3">
+                <div class="col-12 profile-sidebar">
+                    <div class="clearfix"></div>
+                    <div class="circle small one"></div>
+                    <div class="circle small two"></div>
+
+
+                    <div class="row mt-3">
+                        <div class="col-auto">
+                            <figure class="avatar avatar-80 rounded-20 p-1 bg-white shadow-sm">
+                                <img src="assets/img/img.jpg" alt="" class="rounded-18">
+                            </figure>
+                        </div>
+                        <div class="col px-0 align-self-center">
+                            <h5 class="mb-0">David<br>Kavanagh</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="dashboard.html">
+                                <div class="avatar avatar-40 icon"><i class="bi bi-house-door"></i></div>
+                                <div class="col">Dashboard</div>
+                                <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="calender.html" tabindex="-1">
+                                <div class="avatar avatar-40 icon"><i class="fa-regular fa-calendar"></i></div>
+                                <div class="col">Calender</div>
+                                <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                aria-expanded="false">
+                                <div class="avatar avatar-40 icon"><i class="fa-regular fa-envelope"></i></div>
+                                <div class="col">Messages</div>
+                                <div class="arrow"><i class="bi bi-chevron-down plus"></i> <i
+                                        class="bi bi-chevron-up minus"></i>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item nav-link" href="#">
+                                        <div class="avatar avatar-40  icon"><i class="bi bi-inbox"></i></div>
+                                        <div class="col align-self-center">Inbox</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item nav-link" href="#">
+                                        <div class="avatar avatar-40 icon"><i class="fa-regular fa-paper-plane"></i>
+                                        </div>
+                                        <div class="col align-self-center">Sent</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nav-link" href="#">
+                                        <div class="avatar avatar-40 icon"><i class="bi bi-file-earmark"></i>
+                                        </div>
+                                        <div class="col align-self-center">Drafts</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nav-link" href="#">
+                                        <div class="avatar avatar-40 icon"><i class="bi bi-archive"></i>
+                                        </div>
+                                        <div class="col align-self-center">Archived</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nav-link" href="all-messages.html">
+                                        <div class="avatar avatar-40 icon"><i class="fa-regular fa-message"></i>
+                                        </div>
+                                        <div class="col align-self-center">All Messages</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1">
+                                <div class="avatar avatar-40 icon"><i class="bi bi-journal"></i></div>
+                                <div class="col">Journal</div>
+                                <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                aria-expanded="false">
+                                <div class="avatar avatar-40 icon"><i class="bi bi-cash-coin"></i></div>
+                                <div class="col">Expenses</div>
+                                <div class="arrow"><i class="bi bi-chevron-down plus"></i> <i
+                                        class="bi bi-chevron-up minus"></i>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item nav-link" href="expenses.html">
+                                        <div class="avatar avatar-40  icon"><i class="bi bi-cash-coin"></i></div>
+                                        <div class="col align-self-center">Expenses Log</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nav-link" href="payment-activity.html">
+                                        <div class="avatar avatar-40  icon"><i class="bi bi-wallet"></i></div>
+                                        <div class="col align-self-center">Payment Activity</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item nav-link" href="categories.html">
+                                        <div class="avatar avatar-40 icon"> <i class="bi bi-list-task"></i></i>
+                                        </div>
+                                        <div class="col align-self-center">Categories</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1">
+                                <div class="avatar avatar-40 icon"><i class="bi bi-telephone"></i></div>
+                                <div class="col">Calls </div>
+                                <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="info-bank.html" tabindex="-1">
+                                <div class="avatar avatar-40 icon"><i class="bi bi-bank"></i></div>
+                                <div class="col">Info Banks </div>
+                                <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" tabindex="-1">
+                                <div class="avatar avatar-40 icon"><i class="bi bi-box-arrow-right"></i></div>
+                                <div class="col">Logout</div>
+                                <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main class="h-100">
+        <header class="header position-fixed">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <a href="javascript:void(0)" target="_self" class="btn btn-light btn-44 menu-btn">
+                        <img src="assets/img/burger-menu.svg" alt="" class="img-fluid" />
+                    </a>
+                </div>
+                <div class="col text-center">
+                    <div class="logo-small">
+                        <img src="assets/img/logo.png" alt="" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <a href="profile.html" target="_self" class="user_profile">
+                        <img src="assets/img/img.jpg" alt="" class="img-fluid circle" />
+                        <span class="count-indicator"></span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row mb-3 text-center mt-4">
+                <div class="col-12">
+                    <div class="top_heading">
+                        <h2 class="m-0">Categories</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="categories_list">
+                            <div class="categories_list_item">
+                                <div class="name">
+                                    <h6>abc (70/30)</h6>
+                                </div>
+                                <div class="detail">
+                                    <p>My % <span class="bg">30%</span></p>
+                                    <p>Other % <span>70%</span></p>
+                                </div>
+                            </div>
+                            <div class="categories_list_item">
+                                <div class="name">
+                                    <h6>General (50/50)</h6>
+                                </div>
+                                <div class="detail">
+                                    <p>My % <span class="bg">50%</span></p>
+                                    <p>Other % <span>50%</span></p>
+                                </div>
+                            </div>
+                            <div class="categories_list_item">
+                                <div class="name">
+                                    <h6>Mediacal / Dental (50/50)</h6>
+                                </div>
+                                <div class="detail">
+                                    <p>My % <span class="bg">50%</span></p>
+                                    <p>Other % <span>50%</span></p>
+                                </div>
+                            </div>
+                            <div class="categories_list_item">
+                                <div class="name">
+                                    <h6>Other (50/50)</h6>
+                                </div>
+                                <div class="detail">
+                                    <p>My % <span class="bg">50%</span></p>
+                                    <p>Other % <span>50%</span></p>
+                                </div>
+                            </div>
+                            <div class="categories_list_item">
+                                <div class="name">
+                                    <h6>Personal (100/0)</h6>
+                                </div>
+                                <div class="detail">
+                                    <p>My % <span class="bg">100%</span></p>
+                                    <p>Other % <span>0%</span></p>
+                                </div>
+                            </div>
+                            <div class="categories_list_item">
+                                <div class="name">
+                                    <h6>test (10/90)</h6>
+                                </div>
+                                <div class="detail">
+                                    <p>My % <span class="bg">90%</span></p>
+                                    <p>Other % <span>10%</span></p>
+                                </div>
+                            </div>
+                            <div class="categories_list_item">
+                                <div class="name">
+                                    <h6>test (10/90)</h6>
+                                </div>
+                                <div class="detail">
+                                    <p>My % <span class="bg">90%</span></p>
+                                    <p>Other % <span>10%</span></p>
+                                </div>
+                            </div>
+                            <div class="categories_list_item">
+                                <div class="name">
+                                    <h6>test (30/70)</h6>
+                                </div>
+                                <div class="detail">
+                                    <p>My % <span class="bg">70%</span></p>
+                                    <p>Other % <span>30%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="addbutton">
+            <button type="button" class="btn-floating" data-bs-toggle="modal" data-bs-target="#Expenses" id="">
+                <i class="bi bi-plus-lg"></i>
+            </button>
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <span>
+                            <i class="nav-icon bi bi-house"></i>
+                            <span class="nav-text">Home</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span>
+                            <i class="fa-regular fa-envelope"></i>
+                            <span class="nav-text">Messages</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item centerbutton">
+                    <button type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#menumodal"
+                        id="centermenubtn">
+                        <span class="theme-radial-gradient">
+                            <i class="bi bi-grid size-22"></i>
+                        </span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span>
+                            <i class="bi bi-bell"></i>
+                            <span class="nav-text">Notifications</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span>
+                            <i class="bi bi-telephone"></i>
+                            <span class="nav-text">Calls</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <div class="modal fade" id="menumodal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-bottom modal-dialog-scrollable">
+            <div class="modal-content shadow">
+                <div class="modal-body">
+                    <div class="row justify-content-center ">
+                        <div class="col-4 text-center">
+                            <a href="profile.html"
+                                class="avatar avatar-70 p-1 shadow-sm shadow-danger rounded-20 bg-opac mb-2">
+                                <div class="icons text-danger">
+                                    <i class="bi bi-person size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-13">Profile</p>
+                        </div>
+
+                        <div class="col-4 text-center">
+                            <a href="dashboard.html"
+                                class="avatar avatar-70 p-1 shadow-sm shadow-purple rounded-20 bg-opac mb-2">
+                                <div class="icons text-purple">
+                                    <i class="bi bi-house-door size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-13">Dashboard</p>
+                        </div>
+
+                        <div class="col-4 text-center">
+                            <a href="index.html"
+                                class="avatar avatar-70 p-1 shadow-sm shadow-success rounded-20 bg-opac mb-2">
+                                <div class="icons text-success">
+                                    <i class="bi bi-box-arrow-right size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-13">Log Out</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Expenses" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-bottom modal-dialog-scrollable">
+            <div class="modal-content shadow">
+                <div class="modal-body">
+                    <div class="row justify-content-center ">
+                        <div class="col-4 text-center">
+                            <button type="button" class="btn-floating" data-bs-toggle="modal"
+                                data-bs-target="#createExpense" id="">
+                                <div class="avatar avatar-70 p-1 shadow-sm shadow-danger rounded-20 bg-opac mb-2">
+                                    <div class="icons text-danger">
+                                        <i class="bi bi-plus-lg size-11"></i>
+                                    </div>
+                                </div>
+                            </button>
+
+                            <p class="size-10">Create Expense</p>
+                        </div>
+
+                        <div class="col-4 text-center">
+                            <button type="button" class="btn-floating" data-bs-toggle="modal"
+                                data-bs-target="#selectExpenses" id="">
+                                <div class="avatar avatar-70 p-1 shadow-sm shadow-danger rounded-20 bg-opac mb-2">
+                                    <div class="icons text-success">
+                                        <i class="bi bi-credit-card size-11"></i>
+                                    </div>
+                                </div>
+                            </button>
+                            <p class="size-10">Make Payment</p>
+                        </div>
+
+                        <div class="col-4 text-center">
+                            <button type="button" class="btn-floating" data-bs-toggle="modal"
+                                data-bs-target="#newCategory" id="">
+                                <div class="avatar avatar-70 p-1 shadow-sm shadow-danger rounded-20 bg-opac mb-2">
+                                    <div class="icons text-success">
+                                        <i class="bi bi-file-earmark-plus size-11"></i>
+                                    </div>
+                                </div>
+                            </button>
+                            <p class="size-10">New Category</p>
+                        </div>
+
+                        <div class="col-4 text-center mt-3">
+                            <a href="payment-activity.html"
+                                class="avatar avatar-70 p-1 shadow-sm shadow-danger rounded-20 bg-opac mb-2">
+                                <div class="icons text-danger">
+                                    <i class="bi bi-wallet"></i>
+                                </div>
+                            </a>
+                            <p class="size-10">Payment Activity</p>
+                        </div>
+                        <div class="col-4 text-center mt-3">
+                            <a href="categories.html"
+                                class="avatar avatar-70 p-1 shadow-sm shadow-danger rounded-20 bg-opac mb-2">
+                                <div class="icons text-danger">
+                                    <i class="bi bi-list-task"></i>
+                                </div>
+                            </a>
+                            <p class="size-10">Categories</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="createExpense" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-bottom modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="filter-container">
+                    <div class="filter-header">New Expenses</div>
+                    <div class="filter-section">
+                        <div class="filter-title">
+                            <div>
+                                <h5>WHO OWES</h5>
+                            </div>
+                            <i class="bi bi-chevron-down plus"></i>
+                        </div>
+                        <div class="filter-content">
+                            <label>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/img/user_img.png"><span>breige mc nulty</span>
+                                </div>
+                                <input type="radio" name="folder" value="owes" />
+                            </label>
+                            <label>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/img/user_img.png"><span>david kavanagh</span>
+                                </div>
+                                <input type="radio" name="folder" value="owes" />
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-section border-0">
+                        <div class="expense_detail">
+                            <input type="text" placeholder="Expense Name" name="" value="" class="name_input">
+                            <div class="filter-title mt-0 pt-3 pb-3 ">
+                                <div>
+                                    <h5>Category</h5>
+                                    <h6>Select category</h6>
+                                </div>
+                                <i class="bi bi-chevron-down plus"></i>
+                            </div>
+                            <div class="filter-content">
+                                <label>All categories<input type="checkbox" /> </label>
+                                <label>General (50/50) mc nulty<input type="checkbox" /></label>
+                                <label>Medical / Dental (50/50)<input type="checkbox" /></label>
+                                <label>Other (50/50)<input type="checkbox" /></label>
+                                <label>Personal (100/0)<input type="checkbox" /></label>
+                                <label>abc (70/30)<input type="checkbox" /></label>
+                                <label>test (30/70)<input type="checkbox" /></label>
+                                <label>test (10/90)<input type="checkbox" /></label>
+                                <label>test (10/90)<input type="checkbox" /></label>
+                            </div>
+                            <div class="filter-title d-flex align-items-center justify-content-between pt-2 pb-0">
+                                <h5>Category</h5>
+                                <input type="text" placeholder="$0.00" class="price_input">
+                            </div>
+                        </div>
+                        <div class="filter-title1 d-flex align-items-center justify-content-between  ">
+                            <h6>breige's %</h6>
+                            <h6>$--</h6>
+                        </div>
+
+                        <div class="filter-title1 mt-2 d-flex align-items-center justify-content-between ">
+                            <h6>david's %</h6>
+                            <h6>$--</h6>
+                        </div>
+                    </div>
+
+                    <div class="filter-section border-0">
+                        <div class="purchase_detail">
+
+                            <div
+                                class="filter-title d-flex align-items-center justify-content-between pt-2 pb-2 border-0">
+                                <h5>Purchase Date</h5>
+                                <input type="date" placeholder="Select Date" class="date_input">
+                            </div>
+
+                            <div class="filter-title d-flex align-items-center justify-content-between pt-2 pb-0">
+                                <h5>Purchase Date</h5>
+                                <input type="file" placeholder="Add File" class="file_input">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="filter-section">
+                        <div class="filter-title">
+                            <div>
+                                <h5>Children</h5>
+                                <h6>Select children</h6>
+                            </div>
+                            <i class="bi bi-chevron-down plus"></i>
+                        </div>
+                        <div class="filter-content">
+                            <label>All children<input type="checkbox" /> </label>
+                            <label>eabha kavanagh<input type="checkbox" /></label>
+                            <label>test test1<input type="checkbox" /></label>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <div class="checkboxes pt-3 pb-2">
+                            <label>Private<input type="checkbox"> </label>
+                        </div>
+                    </div>
+
+
+                    <button class="main_btn w-100 mt-3">Create</button>
+                    <button class="clear_all">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="newCategory" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-bottom modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="filter-container">
+                    <div class="filter-header">Add Category</div>
+                    <div class="filter-section border-0">
+                        <div class="filter-inner">
+                            <div class="mb-3">
+                                <label>Title</label>
+                                <input type="text" name="" value="" />
+                            </div>
+                            <div class="mb-3">
+                                <label>Description</label>
+                                <input type="text" name="" value="" />
+                            </div>
+                            <div class="filter-title2 d-flex align-items-center justify-content-between mb-2 ">
+                                <h5>My %</h5>
+                                <input type="text" placeholder="" class="">
+                            </div>
+                            <div class="filter-title2 d-flex align-items-center justify-content-between  ">
+                                <h5>David %</h5>
+                                <input type="text" placeholder="" class="">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <button class="main_btn w-100 mt-3">Save</button>
+                    <button class="clear_all">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="selectExpenses" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-bottom modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="filter-container">
+                    <div class="filter-header">Select Expenses</div>
+                    <div class="filter-section border-0">
+                        <div class="select-expense">
+                            <h5 class="mb-3 mt-4">Total: $0.00</h5>
+                            <ul class="expenses">
+                                <li class="expense-item">
+                                    <label class="expense-label">
+                                        <input type="checkbox" class="expense-checkbox" data-amount="30.00">
+                                        <a href="#">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <span class="sub"><b>t546</b></span>
+                                                    <span class="name"><b>EK</b></span>
+                                                    <span class="purchase_date">Purchased: <br>01/22/2025</span>
+                                                </div>
+                                                <div>
+                                                    <span class="owe_price">$30.00</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between mt-1">
+                                                <div>
+                                                    <span class="logs">General (50/50)</span>
+                                                    <span class="total _price">Total: $60.00</span>
+                                                </div>
+                                                <div>
+                                                    <span class="disc">Open</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </label>
+                                </li>
+
+                                <li class="expense-item">
+                                    <label class="expense-label">
+                                        <input type="checkbox" class="expense-checkbox" data-amount="50.00">
+                                        <a href="#">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <span class="sub"><b>pptt</b></span>
+                                                    <span class="name"><b>EK</b></span>
+                                                    <span class="purchase_date">Purchased:<br>01/17/2025</span>
+                                                </div>
+                                                <div>
+                                                    <span class="owe_price">$50.00</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between mt-2">
+                                                <div>
+                                                    <span class="logs">Other (50/50)</span>
+                                                    <span class="total _price">Total: $100.00</span>
+                                                </div>
+                                                <div>
+                                                    <span class="disc">Open</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="main_btn w-100 mt-3">Save</button>
+                    <button class="clear_all">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

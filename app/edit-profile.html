@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Family Wizard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="body-scroll bg-white" data-page="index">
+    <main class="h-100">
+        <header class="header position-fixed profile">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <a href="profile.html" target="_self" class="avatar avatar-40 arrow_btn circle">
+                        <i class="bi bi-chevron-left"></i>
+                    </a>
+                </div>
+                <div class="col text-center">
+                    <div class="logo-small">
+                        <h2 class="size-20 text-white ">Edit Profile</h2>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <a href="dashboard.html" target="_self" class="home_icon avatar avatar-40 circle">
+                        <i class="bi bi-house"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="main-container profile_bg">
+            <div class="edit_profile">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="author-bx pb-0">
+                                <div class="dz-media">
+                                    <img src="assets/img/img.jpg" alt="">
+                                    <button type="button"
+                                        class="d-flex align-items-center justify-content-center circle"
+                                        data-bs-toggle="modal" data-bs-target="#editImageModal">
+                                        <i class="bi bi-pencil-fill"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <section class="user-info">
+                                <div class="mb-16">
+                                    <label class="input-label">First Name</label>
+                                    <input type="text" placeholder="First Name" value="" class="input">
+                                </div>
+                                <div class="mb-16">
+                                    <label class="input-label">Last Name</label>
+                                    <input type="text" placeholder="Last Name" value="" class="input">
+                                </div>
+                                <div class="mb-16">
+                                    <label class="input-label">Mobile Number</label>
+                                    <input type="text" placeholder="+123456789" value="" class="input">
+                                </div>
+                                <div class="mb-16">
+                                    <label class="input-label">E-mail</label>
+                                    <input type="email" placeholder="example@mail.com" value="" class="input">
+                                </div>
+                                <div>
+                                    <label class="input-label">Location</label>
+                                    <textarea id="myTextarea" placeholder="Location" class="input"></textarea>
+                                </div>
+                            </section>
+                            <section class="update_password">
+                                <div class="title mt-4 mb-3">
+                                    <h6>Update Password</h6>
+                                </div>
+                                <input type="password" placeholder="Current password" value="" class="input mb-16">
+                                <input type="password" placeholder="New password" value="" class="input  mb-16">
+                                <input type="password" placeholder="Confirm password" value="" class="input">
+                            </section>
+                            <div class="save-btn mt-3 mb-5">
+                                <a href="profile.html" class="btn">Save Changes</a>
+                            </div>
+                            <section class="delete_account">
+                                <div class="title mt-0 mb-2">
+                                    <h6>Delete Account</h6>
+                                </div>
+                                <p>Once your account is deleted, all of its resources and data will be permanently
+                                    deleted. Before deleting your account, please download any data or information that
+                                    you wish to retain.</p>
+                                    <a href="#" class="delete_btn btn mt-2 mb-3">Delete Account</a>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <span>
+                            <i class="nav-icon bi bi-house"></i>
+                            <span class="nav-text">Home</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span>
+                            <i class="fa-regular fa-envelope"></i>
+                            <span class="nav-text">Messages</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item centerbutton">
+                    <button type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#menumodal"
+                        id="centermenubtn">
+                        <span class="theme-radial-gradient">
+                            <i class="bi bi-grid size-22"></i>
+                        </span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span>
+                            <i class="bi bi-bell"></i>
+                            <span class="nav-text">Notifications</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span>
+                            <i class="bi bi-telephone"></i>
+                            <span class="nav-text">Calls</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- edit-profile modal start -->
+    <div class="modal fade editImageModal modalBg" id="editImageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h1>Change your picture</h1>
+                </div>
+                <div class="modal-body">
+                    <ul class="p-0">
+                        <li>
+                            <button type="button" class="d-flex align-items-center gap-16 radius-8 action-btn">
+                                <i class="fa-solid fa-camera"></i>
+                                Take a photo
+                            </button>
+                        </li>
+                        <li>
+                            <label for="choose-file" class="d-block w-100">
+                                <input type="file" id="choose-file">
+                                <span class="d-flex align-items-center gap-16 radius-8 action-btn">
+                                    <i class="fa-regular fa-folder-open"></i>
+                                    Choose from your file
+                                </span>
+                            </label>
+                        </li>
+                        <li>
+                            <button type="button" class="d-flex align-items-center gap-16 radius-8 action-btn delete">
+                                <i class="fa-solid fa-trash"></i>
+                                Delete Photo
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- edit-profile modal end -->
+
+    <div class="modal fade" id="menumodal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-bottom modal-dialog-scrollable">
+            <div class="modal-content shadow">
+                <div class="modal-body">
+                    <div class="row justify-content-center ">
+                        <div class="col-4 text-center">
+                            <a href="profile.html" class="avatar avatar-70 p-1 shadow-sm shadow-danger rounded-20 bg-opac mb-2">
+                                <div class="icons text-danger">
+                                    <i class="bi bi-person size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-13">Profile</p>
+                        </div>
+
+                        <div class="col-4 text-center">
+                            <a href="dashboard.html" class="avatar avatar-70 p-1 shadow-sm shadow-purple rounded-20 bg-opac mb-2">
+                                <div class="icons text-purple">
+                                    <i class="bi bi-house-door size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-13">Dashboard</p>
+                        </div>
+
+                        <div class="col-4 text-center">
+                            <a href="index.html" class="avatar avatar-70 p-1 shadow-sm shadow-success rounded-20 bg-opac mb-2">
+                                <div class="icons text-success">
+                                    <i class="bi bi-box-arrow-right size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-13">Log Out</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/swiper.js"></script>
+
+</body>
+
+</html>

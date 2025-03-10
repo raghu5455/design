@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Family Wizard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="body-scroll" data-page="index">
+    <div class="sidebar-wrap  sidebar-overlay">
+        <div class="closemenu text-muted">Close Menu</div>
+        <div class="sidebar ">
+            <div class="row my-3">
+                <div class="col-12 profile-sidebar">
+                    <div class="clearfix"></div>
+                    <div class="circle small one"></div>
+                    <div class="circle small two"></div>
+
+
+                    <div class="row mt-3">
+                        <div class="col-auto">
+                            <figure class="avatar avatar-80 rounded-20 p-1 bg-white shadow-sm">
+                                <img src="assets/img/img.jpg" alt="" class="rounded-18">
+                            </figure>
+                        </div>
+                        <div class="col px-0 align-self-center">
+                            <h5 class="mb-0">David<br>Kavanagh</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="dashboard.html">
+                                <div class="avatar avatar-40 icon"><i class="bi bi-house-door"></i></div>
+                                <div class="col">Dashboard</div>
+                                <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="calender.html" tabindex="-1">
+                                <div class="avatar avatar-40 icon"><i class="fa-regular fa-calendar"></i></div>
+                                <div class="col">Calender</div>
+                                <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                aria-expanded="false">
+                                <div class="avatar avatar-40 icon"><i class="fa-regular fa-envelope"></i></div>
+                                <div class="col">Messages</div>
+                                <div class="arrow"><i class="bi bi-chevron-down plus"></i> <i
+                                        class="bi bi-chevron-up minus"></i>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item nav-link" href="#">
+                                        <div class="avatar avatar-40  icon"><i class="bi bi-inbox"></i></div>
+                                        <div class="col align-self-center">Inbox</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item nav-link" href="#">
+                                        <div class="avatar avatar-40 icon"><i class="fa-regular fa-paper-plane"></i>
+                                        </div>
+                                        <div class="col align-self-center">Sent</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nav-link" href="#">
+                                        <div class="avatar avatar-40 icon"><i class="bi bi-file-earmark"></i>
+                                        </div>
+                                        <div class="col align-self-center">Drafts</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nav-link" href="#">
+                                        <div class="avatar avatar-40 icon"><i class="bi bi-archive"></i>
+                                        </div>
+                                        <div class="col align-self-center">Archived</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nav-link" href="all-messages.html">
+                                        <div class="avatar avatar-40 icon"><i class="fa-regular fa-message"></i>
+                                        </div>
+                                        <div class="col align-self-center">All Messages</div>
+                                        <div class="a rrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1">
+                                <div class="avatar avatar-40 icon"><i class="bi bi-journal"></i></div>
+                                <div class="col">Journal</div>
+                                <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                aria-expanded="false">
+                                <div class="avatar avatar-40 icon"><i class="bi bi-cash-coin"></i></div>
+                                <div class="col">Expenses</div>
+                                <div class="arrow"><i class="bi bi-chevron-down plus"></i> <i
+                                        class="bi bi-chevron-up minus"></i>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item nav-link" href="expenses.html">
+                                        <div class="avatar avatar-40  icon"><i class="bi bi-cash-coin"></i></div>
+                                        <div class="col align-self-center">Expenses Log</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nav-link" href="payment-activity.html">
+                                        <div class="avatar avatar-40  icon"><i class="bi bi-wallet"></i></div>
+                                        <div class="col align-self-center">Payment Activity</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item nav-link" href="categories.html">
+                                        <div class="avatar avatar-40 icon"> <i class="bi bi-list-task"></i></i>
+                                        </div>
+                                        <div class="col align-self-center">Categories</div>
+                                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1">
+                                <div class="avatar avatar-40 icon"><i class="bi bi-telephone"></i></div>
+                                <div class="col">Calls </div>
+                                <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="info-bank.html" tabindex="-1">
+                                <div class="avatar avatar-40 icon"><i class="bi bi-bank"></i></div>
+                                <div class="col">Info Banks </div>
+                                <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" tabindex="-1">
+                                <div class="avatar avatar-40 icon"><i class="bi bi-box-arrow-right"></i></div>
+                                <div class="col">Logout</div>
+                                <div class="arrow"><i class="bi bi-chevron-right"></i></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main class="h-100">
+        <header class="header position-fixed">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <a href="javascript:void(0)" target="_self" class="btn btn-light btn-44 menu-btn">
+                        <img src="assets/img/burger-menu.svg" alt="" class="img-fluid" />
+                    </a>
+                </div>
+                <div class="col text-center">
+                    <div class="logo-small">
+                        <img src="assets/img/logo.png" alt="" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <a href="profile.html" target="_self" class="user_profile">
+                        <img src="assets/img/img.jpg" alt="" class="img-fluid circle" />
+                        <span class="count-indicator"></span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row mb-3 text-center mt-4">
+                <div class="col-12">
+                    <div class="top_heading">
+                        <h2 class="m-0">Info Bank</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="info_bank">
+                            <li class="info_bank_item">
+                                <a href="#">
+                                    <div class="img">
+                                    <img src="assets/img/address book.png" alt="" title="">
+                                    </div>
+                                    <span class="from">Address Book</span>
+                                </a>
+                            </li>
+
+                            <li class="info_bank_item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="assets/img/emergency.png" alt="" title="">
+                                    </div>
+                                    <span class="from">Emergency</span>
+                                </a>
+                            </li>
+                            <li class="info_bank_item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="assets/img/insurance.png" alt="" title="">
+                                    </div>
+                                    <span class="from">Insurance</span>
+                                </a>
+                            </li>
+                            <li class="info_bank_item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="assets/img/financial.png" alt="" title="">
+                                    </div>
+                                    <span class="from">Financial</span>
+                                </a>
+                            </li>
+                            <li class="info_bank_item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="assets/img/Family-Vitals.png" alt="" title="">
+                                    </div>
+                                    <span class="from">Family Vitals</span>
+                                </a>
+                            </li>
+                            <li class="info_bank_item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="assets/img/health.png" alt="" title="">
+                                    </div>
+                                    <span class="from">Health</span>
+                                </a>
+                            </li>
+                            <li class="info_bank_item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="assets/img/school.png" alt="" title="">
+                                    </div>
+                                    <span class="from">Schools</span>
+                                </a>
+                            </li>
+                            <li class="info_bank_item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="assets/img/Health-Providers.png" alt="" title="">
+                                    </div>
+                                    <span class="from">Health Providers</span>
+                                </a>
+                            </li>
+                            <li class="info_bank_item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="assets/img/Health-Insurance.png" alt="" title="">
+                                    </div>
+                                    <span class="from">Health Insurance</span>
+                                </a>
+                            </li>
+                            <li class="info_bank_item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="assets/img/education.png" alt="" title="">
+                                    </div>
+                                    <span class="from">Education</span>
+                                </a>
+                            </li>
+                            <li class="info_bank_item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="assets/img/teacher.png" alt="" title="">
+                                    </div>
+                                    <span class="from">Teachers</span>
+                                </a>
+                            </li>
+                            <li class="info_bank_item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="assets/img/activities.png" alt="" title="">
+                                    </div>
+                                    <span class="from">Activities</span>
+                                </a>
+                            </li>
+                            <li class="info_bank_item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="assets/img/child-care.png" alt="" title="">
+                                    </div>
+                                    <span class="from">Child Care</span>
+                                </a>
+                            </li>
+                            <li class="info_bank_item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="assets/img/religion.png" alt="" title="">
+                                    </div>
+                                    <span class="from">Religion</span>
+                                </a>
+                            </li>
+                            <li class="info_bank_item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="assets/img/myfiles.png" alt="" title="">
+                                    </div>
+                                    <span class="from">MyFiles</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <span>
+                            <i class="nav-icon bi bi-house"></i>
+                            <span class="nav-text">Home</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span>
+                            <i class="fa-regular fa-envelope"></i>
+                            <span class="nav-text">Messages</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item centerbutton">
+                    <button type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#menumodal"
+                        id="centermenubtn">
+                        <span class="theme-radial-gradient">
+                            <i class="bi bi-grid size-22"></i>
+                        </span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span>
+                            <i class="bi bi-bell"></i>
+                            <span class="nav-text">Notifications</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span>
+                            <i class="bi bi-telephone"></i>
+                            <span class="nav-text">Calls</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <div class="modal fade" id="menumodal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-bottom modal-dialog-scrollable">
+            <div class="modal-content shadow">
+                <div class="modal-body">
+                    <div class="row justify-content-center ">
+                        <div class="col-4 text-center">
+                            <a href="profile.html"
+                                class="avatar avatar-70 p-1 shadow-sm shadow-danger rounded-20 bg-opac mb-2">
+                                <div class="icons text-danger">
+                                    <i class="bi bi-person size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-13">Profile</p>
+                        </div>
+
+                        <div class="col-4 text-center">
+                            <a href="dashboard.html"
+                                class="avatar avatar-70 p-1 shadow-sm shadow-purple rounded-20 bg-opac mb-2">
+                                <div class="icons text-purple">
+                                    <i class="bi bi-house-door size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-13">Dashboard</p>
+                        </div>
+
+                        <div class="col-4 text-center">
+                            <a href="index.html"
+                                class="avatar avatar-70 p-1 shadow-sm shadow-success rounded-20 bg-opac mb-2">
+                                <div class="icons text-success">
+                                    <i class="bi bi-box-arrow-right size-24"></i>
+                                </div>
+                            </a>
+                            <p class="size-13">Log Out</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/swiper.js"></script>
+
+</body>
+
+</html>

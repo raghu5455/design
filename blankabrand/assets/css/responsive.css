@@ -1,0 +1,344 @@
+@media (max-width: 1400px) {
+    .sec-title h2 {
+        font-size: 38px;
+    }
+
+    h4.main-title a {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1400px) {
+    header.main .header-wrapper .main-menu .mobile-menu-logo a {
+        display: inline-block;
+        max-width: 180px;
+    }
+    header.main.sticky {
+        padding: 13px 3.8%;
+    }
+    .mobile-search-area button.primary-btn4.breadcram-btn {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .sec-title h2 {
+        font-size: 33px;
+    }
+
+    .skin-care-banner-section .banner-wrapper .banner-content h1,
+    .skin-care-banner-section .banner-wrapper .banner-content h2 {
+        font-size: 48px;
+        line-height: 63px;
+    }
+
+    .service-section {
+        padding-top: 20px;
+    }
+
+    .service {
+        margin-top: 20px;
+    }
+
+
+    .about_img img {
+        padding-right: 10px;
+    }
+
+    .skin-product-section .mb-60 {
+        margin-bottom: 30px;
+    }
+
+    .grid-banner-section.product-grid-banner .main-grid .grid-banner.overlay_style .grid-banner-image img {
+        height: 680px;
+    }
+
+    .testimonial .testimonial_inner .testimonial_detail {
+        margin-right: 75px;
+    }
+
+    .testimonial .testimonial_inner h6 {
+        margin-bottom: 40px;
+    }
+
+    .testimonial .testimonial_inner h3 {
+        font-size: 22px;
+        line-height: 33px;
+        margin-bottom: 30px;
+    }
+    .product_right .product-details-content h2 {
+        font-size: 33px;
+    }
+    .about_us_left .sec-title h2 {
+        font-size: 36px;
+    }
+
+}
+
+@media (max-width:1200px) {
+.contact_img {
+    margin-right: 0;
+    margin-bottom: 35px;
+}
+.contact .contact-field input {
+    margin-bottom: 15px;
+}
+.contact .contact-field textarea {
+    margin-bottom: 15px;
+}
+.contact_img img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+}
+
+@media (max-width:991px) {
+    section {
+        padding: 80px 0;
+    }
+
+    .about-content {
+        margin-top: 20px;
+    }
+
+    .about_app_img img {
+        padding-left: 0px;
+    }
+
+    .grid-banner-section.product-grid-banner .grid-banner-content .sub-title {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    h4.main-title a {
+        font-size: 23px;
+    }
+
+    .grid-banner-section.product-grid-banner .grid-banner.overlay_style {
+        min-height: 270px;
+    }
+
+    .grid-banner-section.product-grid-banner .additional-grids {
+        gap: 13px;
+        width: calc(57% -(calc(13px) / 2));
+    }
+
+    .grid-banner-section.product-grid-banner .main-grid .grid-banner.overlay_style .grid-banner-image img {
+        height: 540px;
+    }
+
+    .grid-banner-section.product-grid-banner .grid-banner-content .grid-banner-inner.left {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .testimonial {
+        padding: 80px 0;
+    }
+
+    .testimonial .testimonial_inner h6 {
+        margin-bottom: 30px;
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+
+    .testimonial .testimonial_inner .testimonial_detail {
+        margin-right: 0;
+    }
+
+    .testimonial .testimonial_inner h3 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+
+    .testimonial_detail .rating {
+        font-size: 13px;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .footer_widget img.logo {
+        max-width: 170px;
+        margin-bottom: 18px;
+    }
+
+    .footer_widget {
+        margin-bottom: 45px;
+    }
+
+    .footer_widget h4 {
+        font-size: 18px;
+    }
+
+    .footer-contact {
+        margin-left: 0;
+    }
+
+    .footer_widget p {
+        font-size: 15px;
+        color: #fff;
+        line-height: 22px;
+        max-width: 369px;
+    }
+
+    .footer-bottom {
+        margin-top: 0;
+    }
+
+    .footer-bottom-info .list.list-payment .list-payment__item svg {
+        width: 28px;
+    }
+
+    .footer__copyright.caption p.copyright-text {
+        font-size: 13px;
+    }
+
+    .product_right .product-details-content h2 {
+        font-size: 28px;
+    }
+    .single-product .nav {
+        margin-top: 50px;
+    }
+    section.single-product #primary_slider img {
+        height: 450px;
+    }
+    .product_right .product-details-content h2 {
+        font-size: 25px;
+    }
+    .about_us_left .sec-title h2 {
+        font-size: 33px;
+    }
+    .about_us_right {
+        padding-left: 0;
+        padding-top: 30px;
+    }
+}
+
+@media (max-width:767px) {
+    header.main.sticky {
+        position: relative;
+        box-shadow: none;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .top-bar {
+        padding: 4px 15px;
+    }
+
+    .top-bar .list-style-one li {
+        font-size: 13px;
+    }
+
+    .header-logo img {
+        max-width: 150px;
+    }
+    header.main .header-wrapper .main-menu .mobile-menu-logo a {
+        max-width: 150px;
+    }
+
+    .skin-care-banner-section .banner-wrapper .banner-content span {
+        font-size: 14px;
+    }
+
+    .skin-care-banner-section .banner-wrapper .banner-content h1,
+    .skin-care-banner-section .banner-wrapper .banner-content h2 {
+        font-size: 37px;
+        line-height: 44px;
+    }
+
+    .sec-title h3 {
+        font-size: 14px;
+    }
+
+    .sec-title h2 {
+        font-size: 28px;
+    }
+
+    .grid-banner-section.product-grid-banner .additional-grids {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-banner-section.product-grid-banner {
+        gap: 13px;
+        flex-direction: column-reverse;
+    }
+
+    .grid-banner-section.product-grid-banner .main-grid {
+        width: 100%;
+    }
+
+    .grid-banner-section.product-grid-banner .grid-banner.overlay_style {
+        min-height: 340px;
+    }
+
+    .testimonial {
+        background: #f8f8f8;
+        padding: 60px 0;
+    }
+
+    ul.footer-social-icon {
+        justify-content: start;
+    }
+
+    .footer__payment,
+    .footer_bottom_terms {
+        width: 100%;
+    }
+
+    .footer-bottom-info {
+        flex-direction: column;
+    }
+
+    .footer-bottom-info .list.list-payment {
+        justify-content: center;
+    }
+
+    .footer__copyright.caption {
+        width: 100%;
+        order: 2;
+    }
+
+    .footer_bottom_terms ul {
+        justify-content: center;
+    }
+
+    .footer-bottom-info .list.list-payment .list-payment__item svg {
+        width: 33px;
+    }
+
+    .footer_bottom_terms {
+        margin: 10px 0 4px;
+    }
+
+    .footer__copyright.caption p.copyright-text {
+        font-size: 14px;
+    }
+    .product_right .product-details-content .quantity-bag {
+        gap: 15px;
+    }
+    .product_right .product-details-content .quantity-bag .primary-btn1 {
+        width: calc(100% - 215px);
+    }
+    .product_right .product-details-content .quantity-bag .quantity-counter {
+        gap: 7px;
+    }
+    .product_right .product-details-content .price {
+        font-size: 25px;
+    }
+    .download-btn {
+        gap: 10px;
+        flex-direction: column;
+    }
+    .download-btn .app-btn {
+        justify-content: center;
+    }
+    .contact_img img {
+        height: auto;
+    }
+   
+}
