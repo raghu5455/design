@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class='gallery'>
+    
+        <img class="default active" src='https://odeskthemes.com/7120/hireexpert/wp-content/uploads/2024/12/NAP-effect-image-opened-up-1-scaled.jpg' alt=''>
+        <img src='https://odeskthemes.com/7120/hireexpert/wp-content/uploads/2024/12/NAP-effect-image-opened-up-2-scaled.jpg' alt=''>
+        <img src='https://odeskthemes.com/7120/hireexpert/wp-content/uploads/2024/12/NAP-effect-image-opened-up-3-scaled.jpg' alt=''>
+        <img src='https://odeskthemes.com/7120/hireexpert/wp-content/uploads/2024/12/NAP-effect-image-opened-up-4-1-scaled.jpg' alt=''>
+    </div>
+    
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+    
+      .gallery {
+        width: 100%;
+        height: 60vh;
+        display: flex;                        
+        justify-content: center;
+        align-items: center;
+        overflow-x: clip;
+      }
+    
+      .gallery img {
+        width: 15%;
+        height: 100%;
+        object-fit: cover;
+        transition: all ease-out 0.5s;
+        cursor: pointer;
+        overflow: hidden;
+      }
+    
+      /* Ensure default image stays expanded */
+      .gallery img.default {
+        width: 80%;
+       
+      }
+    
+      /* Prevent cutting off images on hover */
+      .gallery img:hover {
+        object-fit: contain;
+      }
+    </style>
+    
+    <script>
+        // Select all images in the gallery
+        const images = document.querySelectorAll('.gallery img');
+      
+        // Ensure the first image is expanded by default
+        const defaultImage = document.querySelector('.gallery img.default');
+        defaultImage.style.width = '80%';
+        defaultImage.style.objectFit = 'contain'; 
+        defaultImage.style.transform = 'scale(1)';
+      
+        // Prevent hover effects from changing sizes
+        images.forEach((img) => {
+          img.addEventListener('mouseenter', () => {
+            // Reset all images to default size and remove objectFit
+            images.forEach((image) => {
+              image.style.width = '15%';
+              image.style.objectFit = ''; // Reset objectFit
+              image.style.transform = 'scale(1)'; // Reset scale
+            });
+      
+            // Expand the hovered image and apply objectFit
+            img.style.width = '80%';
+            img.style.objectFit = 'contain';
+            img.style.transform = 'scale(1.2)';
+          });
+        });
+      </script>
+
+
+  
+      
+</body>
+</html>
